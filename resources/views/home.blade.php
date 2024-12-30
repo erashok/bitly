@@ -7,10 +7,10 @@
           <div class="col-lg-7 align-items-center d-flex flex-column py-5">
               <div class="row py-5 my-auto text-center text-lg-start">
                 <div class="col-12 mx-auto">
-                  <h1 class="text-15 d-inline-block fw-700 mb-2">Surli: In Short. Readable. Branded.</h1>
+                  <h1 class="text-15 d-inline-block fw-700 mb-2">Trimuly: Shorten. Share. Simplify.</h1>
                 </div>
                 <div class="col-md-10 col-lg-10 col-xl-10 mx-auto me-lg-auto ms-lg-0">
-                  <p class="text-5 text-muted mb-3">Use our URL shortener, QR Codes, and landing pages to engage your audience and connect them to the right information. </p>
+                  <p class="text-5 text-muted mb-3">Transform long URLs into sleek, shareable links. Trimuly makes your online experience fast, easy, and efficient. Get started now!</p>
                     <div class="subscribe-form">
                             <form action="{{ route('shorten') }}" method="POST" id="shorten-form">
                                 @csrf
