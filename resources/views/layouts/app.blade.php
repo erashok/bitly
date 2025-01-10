@@ -14,6 +14,15 @@
     <link rel="stylesheet" href="{{ asset('frontend/vendor/font-awesome/css/all.min.css') }}">
     <link rel="stylesheet" href="{{ asset('frontend/vendor/magnific-popup/magnific-popup.min.css') }}">
     <link rel="stylesheet" href="{{ asset('frontend/css/stylesheet.css') }}" />
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GX6DT2E137"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-GX6DT2E137');
+    </script>
 </head>
 <body class="bg-gray-100">
     <!-- Preloader -->
