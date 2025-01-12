@@ -17,8 +17,17 @@ use App\Http\Controllers\UrlController;
 // Route::get('/', function () {
 //     return view('welcome');
 // });
-Route::get('/', [UrlController::class, 'index'])->name('home');
-Route::post('/shorten', [UrlController::class, 'store'])->name('shorten');
-Route::get('/{short_url}', [UrlController::class, 'redirect'])->name('redirect');
-// about
-Route::get('about-us', [App\Http\Controllers\Admin\AboutController::class, 'about']);
+
+Route::get('/about-us', [App\Http\Controllers\Frontend\FrontendController::class, 'about'])->name('about');
+Route::get('/privacy-policy', [App\Http\Controllers\Frontend\FrontendController::class, 'privacy'])->name('privacy');
+Route::get('/cookies', [App\Http\Controllers\Frontend\FrontendController::class, 'cookies'])->name('cookies');
+Route::get('/terms', [App\Http\Controllers\Frontend\FrontendController::class, 'terms'])->name('terms');
+Route::get('/help', [App\Http\Controllers\Frontend\FrontendController::class, 'help'])->name('help');
+
+
+Route::get('/', [App\Http\Controllers\UrlController::class, 'index'])->name('home');
+Route::post('/shorten', [App\Http\Controllers\UrlController::class, 'store'])->name('shorten');
+Route::get('/{short_url}', [App\Http\Controllers\UrlController::class, 'redirect'])->name('redirect');
+
+
+

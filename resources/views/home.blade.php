@@ -27,7 +27,7 @@
                 </div>
               </div>
           </div>
-          <div class="col-lg-5 my-auto py-lg-5">
+          <div class="col-lg-5 d-sm-none d-md-none d-lg-block d-xs-none my-auto py-lg-5">
             <div class="row mx-0 py-4 mb-4 mb-lg-0">
               <div class="col-12 mx-auto">
                <img src="{{ asset('frontend/images/Untitled-1w34.svg') }}" class="img-responsive" />
@@ -37,12 +37,12 @@
         </div>
         <div class="row">
             <div class="col-lg-12">
-                <ul class="d-flex gap-3 list-style-none">
-                    <li><a href="">About Trimuly</a></li>
-                    <li><a href="">Privacy Policy</a></li>
-                    <li><a href="">Cookie Policy</a></li>
-                    <li><a href="">Terms of Service</a></li>
-                    <li><a href="">Help Center</a></li>
+                <ul class="d-flex gap-3 list-style-none m-l-0">
+                    <li><a href="{{ url('/about-us') }}" target="_blank">About Trimuly</a></li>
+                    <li><a href="{{ url('/privacy-policy') }}" target="_blank">Privacy Policy</a></li>
+                    <li><a href="{{ url('/cookies') }}" target="_blank">Cookie Policy</a></li>
+                    <li><a href="{{ url('/terms') }}" target="_blank">Terms of Service</a></li>
+                    <li><a href="{{ url('/help') }}" target="_blank">Help Center</a></li>
                 </ul>
             </div>
         </div>
