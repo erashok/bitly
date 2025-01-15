@@ -1,5 +1,9 @@
 @extends('layouts.app')
 
+@section('meta_title', "Trimuly - Free URL Shortener | Create Short Links Instantly")
+@section('meta_description', "Shorten long URLs with Trimuly.com! Create secure, easy-to-share short links in seconds. Perfect for social media, tracking clicks, and optimizing campaigns. Try Trimuly – your trusted URL shortener for free!")
+@section('meta_keyword', "URL shortener, free URL shortener, short link generator, link shortener tool, create short links, custom URL shortener, Trimuly short links, shorten URL for free, secure short URLs, best URL shortener")
+
 @section('content')
 
     <div class="container py-4 py-lg-0">
@@ -7,7 +11,7 @@
           <div class="col-lg-7 align-items-center d-flex flex-column py-5">
               <div class="row py-5 my-auto text-center text-lg-start">
                 <div class="col-12 mx-auto">
-                  <h1 class="text-15 d-inline-block fw-700 mb-2">Trimuly: Shorten. Share. Simplify.</h1>
+                  <h1 class="text-10 d-inline-block fw-700 mb-2">Trimuly: Shorten. Share. Simplify.</h1>
                 </div>
                 <div class="col-md-10 col-lg-10 col-xl-10 mx-auto me-lg-auto ms-lg-0">
                   <p class="text-5 text-muted mb-3">Transform long URLs into sleek, shareable links. Trimuly makes your online experience fast, easy, and efficient. Get started now!</p>
@@ -40,7 +44,7 @@
                 <ul class="d-flex gap-3 list-style-none m-l-0">
                     <li><a href="{{ url('/about-us') }}" target="_blank">About Trimuly</a></li>
                     <li><a href="{{ url('/privacy-policy') }}" target="_blank">Privacy Policy</a></li>
-                    <li><a href="{{ url('/cookies') }}" target="_blank">Cookie Policy</a></li>
+                    {{-- <li><a href="{{ url('/cookies') }}" target="_blank">Cookie Policy</a></li> --}}
                     <li><a href="{{ url('/terms') }}" target="_blank">Terms of Service</a></li>
                     <li><a href="{{ url('/help') }}" target="_blank">Help Center</a></li>
                 </ul>

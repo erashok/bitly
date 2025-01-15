@@ -13,9 +13,9 @@ class FrontendController extends Controller
     public function privacy(){
         return view('frontend.privacy');
     }
-    public function cookies(){
-        return view('frontend.cookies');
-    }
+    // public function cookies(){
+    //     return view('frontend.cookies');
+    // }
     public function terms(){
         return view('frontend.terms');
     }

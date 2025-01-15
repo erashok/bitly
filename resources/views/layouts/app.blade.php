@@ -8,6 +8,11 @@
     <meta name="description" content="@yield('meta_description')">
     <meta name="keywords" content="@yield('meta_keyword')">
     <meta name="author" content="trimuly">
+    <meta property="og:title" content="@yield('meta_title')">
+    <meta property="og:description" content="@yield('meta_description')">
+    <meta property="og:image" content="@yield('thum_image')">
+    <meta property="og:image:height" content="300"> <!-- Fixed height for the image -->
+    <meta property="og:image:width" content="300">
     <link rel="icon" href="{{ asset('frontend/images/trimuly-icon.png') }}" type="image/png" />
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900' type='text/css'>
     <link rel="stylesheet" href="{{ asset('frontend/vendor/bootstrap/css/bootstrap.min.css') }}">
